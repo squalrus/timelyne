@@ -2,5 +2,5 @@ body,html{margin:0;padding:0}
 body{background:#f4f4f4 url(../img/wavegrid.png) 0 0;font-family:"Segoe";font-size:13px}
 .content{margin:0 auto;width:960px}
 .tl-progress-bar{background-color:#DDD;height:4px;position:relative;width:100%}.tl-progress-bar .tl-phase{background-color:#DD0;float:left;height:4px;width:75%}
-.tl-progress-bar .tl-progress-full{background-color:#DDD;height:4px;position:absolute;left:0;top:0;width:0%}.tl-progress-bar .tl-progress-full .tl-progress-label{background-color:#DD0;color:#666;display:inline-block;height:24px;right:0;line-height:23px;margin-left:-90px;overflow:ellipsis;padding:0 6px;position:absolute;text-align:center;top:-34px;width:78px}
+.tl-progress-bar .tl-progress-full{background-color:#DDD;height:4px;position:absolute;left:0;top:0;width:0%}.tl-progress-bar .tl-progress-full .tl-progress-label{background-color:#DD0;color:#F4F4F4;display:inline-block;height:24px;right:0;line-height:23px;margin-left:-90px;overflow:ellipsis;padding:0 6px;position:absolute;text-align:center;top:-34px;width:78px}
 .tl-progress-bar .tl-progress-full .tl-progress-label:after{border-left:10px solid transparent;border-top:10px solid #DD0;content:'';height:0;position:absolute;right:0px;top:24px;width:0}
