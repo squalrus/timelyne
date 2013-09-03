@@ -4,19 +4,30 @@
     <title>Timelyne</title>
 
     <link rel="stylesheet" href="/css/timelyne.min.css" />
+    <style>
+        #tl-test-01 .tl-progress-label {
+            background-color: #DD0;
+        }
+        #tl-test-01 .tl-progress-label:after {
+            border-top: 10px solid #DD0;
+        }
+    </style>
 </head>
 <body>
-    <h1>I did it!</h1>
 
     <div class="content">
+        <h1>Timelyne</h1>
 
-        <div id="tl-test-01" class="tl-progress-bar">
-            <div class="tl-progress-full">
-                <div class="tl-progress-label">something</div>
+        <div id="tl-test-01">
+            <div class="tl-label">WACOM 3.8.1</div>
+            <div class="tl-progress-bar">
+                <div class="tl-progress-full">
+                    <div class="tl-progress-label">something <span class="tl-progress-fin"></span></div>
+                </div>
+                <div id="tl-phase-dev" class="tl-phase"></div>
+                <div id="tl-phase-review" class="tl-phase"></div>
+                <div id="tl-phase-test" class="tl-phase"></div>
             </div>
-            <div id="tl-phase-dev" class="tl-phase"></div>
-            <div id="tl-phase-review" class="tl-phase"></div>
-            <div id="tl-phase-test" class="tl-phase"></div>
         </div>
 
     </div>

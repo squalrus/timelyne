@@ -10,7 +10,8 @@
              // Uglify JS
             ,uglify: {
                  options: {
-                    beautify: true
+                     mangle: false,
+                     beautify: true
                 }
                 ,dist: {
                     files: {
