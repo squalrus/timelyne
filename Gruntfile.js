@@ -1,65 +1,67 @@
-(function() {
-    'use strict';
+(function () {
 
-    module.exports = function( grunt ){
+    "use strict";
+
+    module.exports = function (grunt) {
 
         // Project Configuration
         grunt.initConfig({
-             pkg: grunt.file.readJSON( 'package.json' )
+            pkg: grunt.file.readJSON("package.json"),
 
-             // Uglify JS
-            ,uglify: {
-                 options: {
-                     mangle: false,
-                     beautify: true
-                }
-                ,dist: {
+            // Uglify JS
+            uglify: {
+                options: {
+                    mangle: false,
+                    beautify: true
+                },
+                dist: {
                     files: {
-                         'public/js/timelyne.min.js' : ['lib/timelyne.js']
+                        "public/js/timelyne.min.js" : ["lib/timelyne.js"]
                     }
                 }
-            }
+            },
 
             // Compile LESS
-            ,less: {
+            less: {
                 development: {
                     options: {
                         compress: true
-                    }
-                    ,files: {
-                         'public/css/timelyne.min.css': 'theme/timelyne.less'
+                    },
+                    files: {
+                        "public/css/timelyne.min.css": "theme/timelyne.less"
                     }
                 }
-            }
+            },
 
             // Linting Files / Directories
-            ,jshint: {
-                all: ['Gruntfile.js', 'lib/*.js']
-                ,options: {
-                    laxcomma: true,
+            jshint: {
+                all: ["Gruntfile.js", "lib/*.js"],
+                options: {
+                    laxcomma: false,
                     eqeqeq: true,
-                    quotmark: 'single',
+                    quotmark: "double",
                     unused: true,
                     strict: true,
-                    trailing: true
+                    trailing: true,
+                    indent: 4
                 }
-            }
+            },
 
             // Watch Directories / Files
-            ,watch: {
-                 files: ['Gruntfile.js', 'lib/*.js', 'theme/*.less']
-                ,tasks: ['default']
+            watch: {
+                files: ["Gruntfile.js", "lib/*.js", "theme/*.less"],
+                tasks: ["default"]
             }
         });
 
         // Load the plugins
-        grunt.loadNpmTasks( 'grunt-contrib-uglify' );
-        grunt.loadNpmTasks( 'grunt-contrib-less' );
-        grunt.loadNpmTasks( 'grunt-contrib-jshint' );
-        grunt.loadNpmTasks( 'grunt-contrib-watch' );
+        grunt.loadNpmTasks("grunt-contrib-uglify");
+        grunt.loadNpmTasks("grunt-contrib-less");
+        grunt.loadNpmTasks("grunt-contrib-jshint");
+        grunt.loadNpmTasks("grunt-contrib-watch");
 
         // Default tasks
-        grunt.registerTask( 'default', ['uglify', 'less', 'jshint'] );
+        grunt.registerTask("default", ["uglify", "less", "jshint"]);
     };
 
 })();
