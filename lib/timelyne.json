@@ -1,0 +1,28 @@
+{
+    "defaults": {
+        "development": {
+            "color": "#178DE3"
+        },
+        "review": {
+            "color": "#B0B000",
+            "length": "1 day"
+        },
+        "test": {
+            "color": "#E7322E",
+            "length": "3 day"
+        }
+    },
+    "data": [{
+        "title": "Milestone 1",
+        "start": "Sep 01, 2013 08:00",
+        "end": "Sep 29, 2013 18:00"
+    },{
+        "title": "Milestone 2",
+        "start": "Sep 08, 2013 08:00",
+        "end": "Sep 29, 2013 18:00"
+    },{
+        "title": "Milestone 3",
+        "start": "Sep 16, 2013 08:00",
+        "end": "Sep 29, 2013 18:00"
+    }]
+}
