@@ -11,8 +11,7 @@
             // Uglify JS
             uglify: {
                 options: {
-                    mangle: false,
-                    beautify: true
+                    mangle: true
                 },
                 dist: {
                     files: {
@@ -49,7 +48,7 @@
 
             // Watch Directories / Files
             watch: {
-                files: ["Gruntfile.js", "lib/*.js", "theme/*.less"],
+                files: ["Gruntfile.js", "server.js", "lib/*.js", "theme/*.less"],
                 tasks: ["default"]
             }
         });

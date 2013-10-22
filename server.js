@@ -15,6 +15,7 @@ app.use( express.favicon() );
 app.use( express.bodyParser() );
 app.use( express.compress() );
 app.use( express.static( path.join( __dirname, 'public' ) ) );
+app.use( express.static( path.join( __dirname, 'lib' ) ) );
 
 // Routing
 app.get( '/', function( req, res ){
