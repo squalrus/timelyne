@@ -22,6 +22,10 @@ app.get( '/', function( req, res ){
     res.render( 'index' );
 });
 
+app.get( '/basic', function( req, res ){
+    res.render( 'basic' );
+});
+
 
 // Create Server
 server = http.createServer( app )

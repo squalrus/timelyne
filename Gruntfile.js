@@ -15,7 +15,8 @@
                 },
                 dist: {
                     files: {
-                        "public/js/timelyne.min.js" : ["lib/timelyne.js"]
+                        "public/js/timelyne.min.js" : ["lib/timelyne.js"],
+                        "public/js/basic.min.js" : ["lib/basic.js"]
                     }
                 }
             },
@@ -27,7 +28,8 @@
                         compress: true
                     },
                     files: {
-                        "public/css/timelyne.min.css": "theme/timelyne.less"
+                        "public/css/timelyne.min.css": "theme/timelyne.less",
+                        "public/css/basic.min.css": "theme/basic.less"
                     }
                 }
             },
